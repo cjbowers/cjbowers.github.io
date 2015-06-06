@@ -9,10 +9,19 @@
 	<link href="bulgestyle.css" rel="stylesheet" type="text/css" media="screen"/>
    
     <link rel="shortcut icon" href="/favicon.ico" >
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="packery.pkgd.min.js"></script>
+
 </head>
 
+<script language="JavaScript1.2">
+
+var $container = $('#container').imagesLoaded( function() {
+  // initialize Packery after all images have loaded
+  $container.packery({...});
+});
+
+</script>
 
 <body>
 
@@ -109,10 +118,12 @@
 
 <!-- REcent work -->
 <div id="recent_background">
+
 <div id="recent_work">
 
 <div class="packery js-packery" data-packery-options='{ "gutter": ".gutter-sizer", "itemSelector": ".item" }'>
-    <div class="gutter-sizer"></div>
+
+<div class="gutter-sizer"></div>
    
 <!--
     <div class="item w1">
@@ -127,7 +138,7 @@
 
 -->
 
-
+<!-- grid images -->
 
     <div class="item w3">
     <a href="http://google.com">
@@ -223,21 +234,6 @@
     </div>
 
 
-
-
-    <div class="item"></div>
-    <div class="item h2"></div>
-    <div class="item"></div>
-    <div class="item w2"></div>
-    <div class="item h2"></div>
-    <div class="item"></div>
-    <div class="item h2"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item"></div>
-    <div class="item h2"></div>
-    <div class="item"></div>
-    <div class="item"></div>
   </div>
 
 </div>
