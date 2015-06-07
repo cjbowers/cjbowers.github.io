@@ -43,23 +43,21 @@ body {
 
 /* recent work */
 
-#recent_background {
-	width:auto;
-	background:white;
-	margin: 150px 0 0 0;
-}
 
-#recent_work {
+
+#wrapper {
 	background:white;
 	width:75%;
 	max-width: 1000px;
 	height:1000px;
-	   margin-left: auto;
+	margin-left: auto;
     margin-right: auto;
 	padding:100px 0 0 0;
 }
 
-
+#wrapper img {
+	width:100%;
+}
 
 * {
   -webkit-box-sizing: border-box;
