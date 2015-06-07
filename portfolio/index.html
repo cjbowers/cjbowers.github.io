@@ -10,35 +10,9 @@
     <link rel="shortcut icon" href="/favicon.ico" >
     <script src="packery.pkgd.min.js"></script>
     <script src="imagesloaded.pkgd.js"></script>
+    <script type="text/javascript" src="js/cdg.js"></script>
 
 
-<script>
-
-var recent_work = document.querySelector('#packeryContainer');
-
-var $pckry;
-
-var $pckry = new Packery( recent_work, {
-
-// options
-
-itemSelector: '.jsp-item',
-
-stamp: '.packery-stamp',
-
-gutter: 0,
-
-});
-
-// initialize Packery after all images have loaded
-
-imagesLoaded( recent_work, function() {
-
-$pckry = new Packery( recent_work );
-
-});
-
-</script>
 
 </head>
 
@@ -160,7 +134,7 @@ $pckry = new Packery( recent_work );
 
 <!-- grid images -->
 
-    <div class="item w3">
+    <div class="packery-item item w3">
     <a href="http://google.com">
     <div class="hover">
         <div class="center_info_2">
@@ -174,7 +148,7 @@ $pckry = new Packery( recent_work );
     </div>
 
 
-    <div class="item w1">
+    <div class="packery-item item w1">
     <a href="http://google.com">
     <div class="hover">
         <div class="center_info">
@@ -187,7 +161,7 @@ $pckry = new Packery( recent_work );
     </a>
     </div>
 
-    <div class="item w1">
+    <div class="packery-item item w1">
     <a href="http://google.com">
     <div class="hover">
         <div class="center_info">
@@ -201,7 +175,7 @@ $pckry = new Packery( recent_work );
     </div>
 
 
-    <div class="item w1">
+    <div class="packery-item item w1">
     <a href="http://google.com">
     <div class="hover">
         <div class="center_info">
@@ -214,7 +188,7 @@ $pckry = new Packery( recent_work );
     </a>
     </div>
 
-    <div class="item w1">
+    <div class="packery-item item w1">
     <a href="http://google.com">
     <div class="hover">
         <div class="center_info">
@@ -227,7 +201,7 @@ $pckry = new Packery( recent_work );
     </a>
     </div>
 
-    <div class="item w1">
+    <div class="packery-item item w1">
     <a href="http://google.com">
     <div class="hover">
         <div class="center_info">
@@ -240,7 +214,7 @@ $pckry = new Packery( recent_work );
     </a>
     </div>
 
-    <div class="item w1">
+    <div class="packery-item item w1">
     <a href="http://google.com">
     <div class="hover">
         <div class="center_info">
