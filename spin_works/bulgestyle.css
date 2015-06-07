@@ -59,6 +59,9 @@ body {
 	padding:100px 0 0 0;
 }
 
+#wrapper img {
+	width:100%;
+}
 
 
 * {
