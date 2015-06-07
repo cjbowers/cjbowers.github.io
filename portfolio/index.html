@@ -7,14 +7,12 @@
 	<meta name="description" content="Christopher Bowers Portfolio">
     <link rel="shortcut icon" href="http://favicon.cargocollective.com/favicon.ico">
 	<link href="bulgestyle.css" rel="stylesheet" type="text/css" media="screen"/>
-   
-
-   <script type="text/javascript" href="http://imagesloaded.desandro.com/imagesloaded.pkgd.js"</script>
     <link rel="shortcut icon" href="/favicon.ico" >
-
-    <script src="imagesloaded.pkgd.min.js"></script>
     <script src="packery.pkgd.min.js"></script>
-        <script src="pack.js"></script>
+
+
+<script src="imagesloaded.pkgd.js"></script>
+
 
 </head>
 
@@ -23,12 +21,12 @@
 <!-- Navigation -->
 
 <div class="navigation">
-    <a href="http://www.chrisbowersdesign.com">
-        PROFILE
-    </a>
-    <a href="http://www.chrisbowersdesign.com">
-        WORK
-    </a>
+	<a href="http://www.chrisbowersdesign.com">
+		PROFILE
+	</a>
+	<a href="http://www.chrisbowersdesign.com">
+		WORK
+	</a>
 </div>
 
 
@@ -36,14 +34,14 @@
 <div class="background">
 
 <div class="name">
-    <h1>CHRIS BOWERS</h1>
+	<h1>CHRIS BOWERS</h1>
 
-    <p class="italic">I like to explore beyond boundaries.</p>
+	<p class="italic">I like to explore beyond boundaries.</p>
 </div>
 <div class="about">
-    <h1>GRAPHIC</h1>
-    <h1>+</h1>
-    <h1>INTERACTIVE DESIGN</h1>
+	<h1>GRAPHIC</h1>
+	<h1>+</h1>
+	<h1>INTERACTIVE DESIGN</h1>
 </div>
 
 <!-- spinning pen -->
@@ -115,8 +113,6 @@
 <div id="recent_background">
 
 <div id="recent_work">
-
-<div id="container">
 
 <div class="packery js-packery" data-packery-options='{ "gutter": ".gutter-sizer", "itemSelector": ".item" }'>
 
@@ -234,10 +230,39 @@
   </div>
 
 </div>
-</div>
 
 </div>
 </div>
 
 </body>
+
+
+<script>
+
+var container = document.querySelector('#packeryContainer');
+
+var $pckry;
+
+var $pckry = new Packery( container, {
+
+// options
+
+itemSelector: '.jsp-item',
+
+stamp: '.packery-stamp',
+
+gutter: 0,
+
+});
+
+// initialize Packery after all images have loaded
+
+imagesLoaded( container, function() {
+
+$pckry = new Packery( container );
+
+});
+
+</script>
+
 </html>
