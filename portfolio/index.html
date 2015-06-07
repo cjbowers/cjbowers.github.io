@@ -14,11 +14,11 @@
 
 <script>
 
-var container = document.querySelector('#packeryContainer');
+var recent_work = document.querySelector('#packeryContainer');
 
 var $pckry;
 
-var $pckry = new Packery( container, {
+var $pckry = new Packery( recent_work, {
 
 // options
 
@@ -32,9 +32,9 @@ gutter: 0,
 
 // initialize Packery after all images have loaded
 
-imagesLoaded( container, function() {
+imagesLoaded( recent_work, function() {
 
-$pckry = new Packery( container );
+$pckry = new Packery( recent_work );
 
 });
 
@@ -138,7 +138,6 @@ $pckry = new Packery( container );
 <!-- REcent work -->
 <div id="recent_background">
 
-<div id="packeryContainer">
 
 <div id="recent_work">
 
@@ -258,7 +257,7 @@ $pckry = new Packery( container );
   </div>
 
 </div>
-</div>
+
 </div>
 </div>
 
