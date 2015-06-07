@@ -9,10 +9,36 @@
 	<link href="bulgestyle.css" rel="stylesheet" type="text/css" media="screen"/>
     <link rel="shortcut icon" href="/favicon.ico" >
     <script src="packery.pkgd.min.js"></script>
+    <script src="imagesloaded.pkgd.js"></script>
 
 
-<script src="imagesloaded.pkgd.js"></script>
+<script>
 
+var container = document.querySelector('#packeryContainer');
+
+var $pckry;
+
+var $pckry = new Packery( container, {
+
+// options
+
+itemSelector: '.jsp-item',
+
+stamp: '.packery-stamp',
+
+gutter: 0,
+
+});
+
+// initialize Packery after all images have loaded
+
+imagesLoaded( container, function() {
+
+$pckry = new Packery( container );
+
+});
+
+</script>
 
 </head>
 
@@ -237,32 +263,5 @@
 </body>
 
 
-<script>
-
-var container = document.querySelector('#packeryContainer');
-
-var $pckry;
-
-var $pckry = new Packery( container, {
-
-// options
-
-itemSelector: '.jsp-item',
-
-stamp: '.packery-stamp',
-
-gutter: 0,
-
-});
-
-// initialize Packery after all images have loaded
-
-imagesLoaded( container, function() {
-
-$pckry = new Packery( container );
-
-});
-
-</script>
 
 </html>
