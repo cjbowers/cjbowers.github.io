@@ -207,6 +207,12 @@ h3 {
 
 }
 
+h4 {
+	font-family: georgia;
+	font-size:30px;
+	text-align:center;
+}
+
 p {
 	font-family: georgia;
 	font-size:14px;
