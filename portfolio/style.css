@@ -6,8 +6,17 @@ body {
 	padding:0;
 	margin:0;
 	background: rgb(221,237,217);
-	height: 1200px;
 
+
+ 	 line-height:1.5;
+ 	 font-family: Verdana;
+}
+
+#title_green {
+	padding:75px;
+	margin:-75px;
+	background:#F5F5F5;
+	height: 1200px;
  	 line-height:1.5;
  	 font-family: Verdana;
 }
@@ -199,8 +208,17 @@ h1 {
     font-size: 14px;
     letter-spacing: 1.5px;
     font-family: verdana;
-    font-weight: bold;
     line-height: 24px;
+    font-weight:bold;
+
+}
+
+h2 {
+	font-family: Verdana;
+	font-size:40px;
+	font-weight:normal;
+
+
 }
 
 h3 {
@@ -213,16 +231,23 @@ h3 {
 }
 
 h4 {
-	font-family: georgia;
-	font-size:30px;
+	font-family: "Times New Roman", Times, serif;
+	font-size:45px;
 	text-align:center;
+	font-weight:lighter;
+
+}
+
+h4.left {
+	text-align:left;
+	margin-top:-10px;
 }
 
 p {
-	font-family: georgia;
+	font-family: verdana;
 	font-size:14px;
-	line-height: 10px;
-	color: #808080;
+	line-height: 20px;
+
 }
 
 p.italic {
@@ -246,10 +271,10 @@ p.italic {
 
 .navigation a, a:visited {
     color: black;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 1.5px;
     font-family: verdana;
-
+    color:#404040;
     text-decoration: none;
     position: relative;
     white-space: nowrap;
@@ -270,7 +295,7 @@ p.italic {
     transition-timing-function: cubic-bezier(0.19,1,.22,1);
     position: absolute;
     left: 0;
-    top: 44%;
+    top: 40%;
     width: 100%;
 
 }
@@ -507,3 +532,57 @@ a.bar:hover span {
 	}
 
 }
+
+
+/* project styles header */
+
+.back {
+	width:1180px;
+	margin:75px auto 0 auto;
+}
+
+.project_wrap {
+	width:940px;
+	margin-left:240px;
+
+}
+
+.title {
+
+	    border-top: 2px solid;
+	    height:100px;
+
+}
+
+.title_space {
+
+	position:relative;
+	top:-30px;
+}
+
+.about_2 {
+	    border-top: 2px solid;
+	    height:100px;
+}
+
+.wrap1 {
+	width:680px;
+	float:left;
+	margin-right:40px;
+
+}
+
+.wrap2 {
+	width:220px;
+	float:left;
+}
+
+.description {
+	border-top: 2px solid;
+
+}
+
+.info {
+	    border-top: 2px solid;
+}
+
